@@ -12,6 +12,7 @@ use Bitrix\Main\Page\Asset;
     <title><?$APPLICATION->ShowTitle()?></title>
     <?
     CJSCore::Init(['jquery']);
+    \Bitrix\Main\UI\Extension::load("ui.bootstrap4");
     Asset::getInstance()->addJs('https://unpkg.com/swiper/swiper-bundle.min.js');
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/main.js');
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/style.css');
@@ -78,9 +79,9 @@ use Bitrix\Main\Page\Asset;
                 <img alt="Лого тип компании" height="22" src="<?=SITE_TEMPLATE_PATH?>/img/logo.png" srcset="<?=SITE_TEMPLATE_PATH?>/img/logo@2x.png" width="62">
             </a>
             <div class="page-header__user-list">
-                <a aria-label="поиск" class="page-header__user-link page-header__user-link--search" href="#"></a>
+                <a aria-label="поиск" class="page-header__user-link page-header__user-link--search" href=""></a>
                 <!-- класс для активной корзины page-header__user-link==active -->
-                <a aria-label="корзина" class="page-header__user-link page-header__user-link--shopping-bag" href="#"><span>3</span></a>
+                <a aria-label="корзина" class="page-header__user-link page-header__user-link--shopping-bag" href="/cart"><span>3</span></a>
             </div>
         </div>
         <?$APPLICATION->IncludeComponent(

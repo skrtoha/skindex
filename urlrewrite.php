@@ -8,6 +8,14 @@ $arUrlRewrite=array (
     'PATH' => '/catalog/index.php',
     'SORT' => 400,
   ),
+  6 => 
+  array (
+    'CONDITION' => '#^/cooperation#',
+    'RULE' => '',
+    'ID' => NULL,
+    'PATH' => '/cooperation.php',
+    'SORT' => 400,
+  ),
   0 => 
   array (
     'CONDITION' => '#^/reviews#',
@@ -32,6 +40,14 @@ $arUrlRewrite=array (
     'PATH' => '/study.php',
     'SORT' => 400,
   ),
+  5 => 
+  array (
+    'CONDITION' => '#^/press#',
+    'RULE' => '',
+    'ID' => NULL,
+    'PATH' => '/press.php',
+    'SORT' => 400,
+  ),
   3 => 
   array (
     'CONDITION' => '#^/news#',
@@ -40,18 +56,4 @@ $arUrlRewrite=array (
     'PATH' => '/news.php',
     'SORT' => 400,
   ),
-    array(
-        'CONDITION' => '#^/press#',
-        'RULE' => '',
-        'ID' => NULL,
-        'PATH' => '/press.php',
-        'SORT' => 400,
-    ),
-    array(
-        'CONDITION' => '#^/cooperation#',
-        'RULE' => '',
-        'ID' => NULL,
-        'PATH' => '/cooperation.php',
-        'SORT' => 400,
-    )
 );
