@@ -19,7 +19,7 @@ switch($_GET['act']){
         while($row = $result->Fetch()){
             $quantity += $row['QUANTITY'];
         }
-        echo int($quantity);
+        echo $quantity;
         break;
 }
 die();
